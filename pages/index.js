@@ -10,8 +10,8 @@ export default function Home() {
 
       <main>
         <ul>
-          <li><Link href="/unrestricted">Unrestricted</Link></li>
-          <li><Link href="/restricted">Restricted</Link></li>
+          <li><Link href="/without-rewrite">Without Rewrite</Link></li>
+          <li><Link href="/with-rewrite">With Rewrite</Link></li>
         </ul>
       </main>
     </div>

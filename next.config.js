@@ -5,15 +5,15 @@ function isVercelDeploy() {
   );
 }
 
-const geoRestrictedRoutes = [
-  '/restricted',
-  '/restricted/:slug'
+const rewriteRoutes = [
+  '/with-rewrite',
+  '/with-rewrite/:slug'
 ]
 
 module.exports = {
   async rewrites() {
     return {
-      afterFiles: geoRestrictedRoutes.map((route) => {
+      afterFiles: rewriteRoutes.map((route) => {
         return isVercelDeploy()
           ? {
               source: route,
