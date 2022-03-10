@@ -33,7 +33,7 @@ export default function Home() {
             <button onClick={clearCookie}>Clear Country Cookie</button>
             <br />
             <small style={{ fontSize: "12px" }}>
-              &quot;With Rewrite&quot; pages willshow US defaultly the
+              &quot;With Rewrite&quot; pages will show US defaultly when the
               country cookie does not exist.
             </small>
           </div>
@@ -46,7 +46,7 @@ export default function Home() {
             <Link href="/with-rewrite">With Rewrite</Link>
           </li>
           <li>
-            <Link href="/with-rewrite/qux">With Rewrite qux (after reset cookie)</Link>
+            <Link href="/with-rewrite/qux">With Rewrite qux (after clear cookie)</Link>
           </li>
         </ul>
       </main>
