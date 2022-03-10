@@ -4,14 +4,14 @@ import React from 'react';
 export const getStaticProps = async (
   context
 ) => {
-  if (typeof context.params?.language !== 'string') {
-    throw new Error('Missing language');
+  if (typeof context.params?.country !== 'string') {
+    throw new Error('Missing country');
   }
 
   return {
     revalidate: 3600,
     props: {
-      language: context.params.language,
+      country: context.params.country,
       slug: context.params.slug,
     },
   };
@@ -25,7 +25,7 @@ export const getStaticPaths = async () => {
 };
 
 export default function WithRewritePage({
-  language,
+  country,
   slug,
 }) {
   return (
@@ -36,7 +36,7 @@ export default function WithRewritePage({
 
       <main>
         <h1>With Rewrite</h1>
-        <div>{language}</div>
+        <div>{country}</div>
         <div>{slug}</div>
       </main>
     </div>
