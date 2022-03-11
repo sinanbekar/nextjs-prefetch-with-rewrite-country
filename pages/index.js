@@ -33,7 +33,7 @@ export default function Home() {
             <button onClick={clearCookie}>Clear Country Cookie</button>
             <br />
             <small style={{ fontSize: "12px" }}>
-              &quot;With Rewrite&quot; pages will show US defaultly when the
+              &quot;With Rewrite&quot; pages will fully refresh when the
               country cookie does not exist.
             </small>
           </div>
